@@ -12,7 +12,7 @@
     "ws": "^8.8.1"
   },
   "scripts": {
-    "turn": "concurrently --kill-others \"nodemon server/websocket.js\" \"react-scripts start\" " ,
+    "start": "concurrently --kill-others \"nodemon server/websocket.js\" \"react-scripts start\" " ,
     "build": "react-scripts build"
   },
   "eslintConfig": {
