@@ -8,9 +8,11 @@ const WebSock = () => {
     const [connected, setConnected] = useState(false);
     const [username, setUsername] = useState('')
     let URL = window.location.href.split(':')[1]
-    console.log(URL)
+
+
+
     function connect() {
-        socket.current = new WebSocket(`WSS:${URL}:5000`)
+        socket.current = new WebSocket(`ws:${URL}:5000`,)
 
         socket.current.onopen = () => {
             setConnected(true)
